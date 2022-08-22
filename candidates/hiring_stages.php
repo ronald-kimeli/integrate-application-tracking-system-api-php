@@ -37,7 +37,7 @@ include ("../env.php");
              foreach($decs as $dec):
                 {
             echo "<pre>";
-            print_r($dec);
+            // print_r($dec);
 
                 print_r("Job Slug:" .$dec['job_slug']."</br>");
                 print_r("Candidate:" .$dec['candidate_slug']."</br>");
