@@ -38,10 +38,18 @@ include ("../env.php");
                 {
             echo "<pre>";
             print_r($dec);
-             
+
                 print_r("Job Slug:" .$dec['job_slug']."</br>");
                 print_r("Candidate:" .$dec['candidate_slug']."</br>");
                 print_r("Status:" .$dec['status']['label']."</br>");
+                
+                if(empty($dec['remark'])){
+                             print_r("Remark:" ."Null"."</br>");
+                }
+                else{
+                    print_r("Remark:" .$dec['remark']."</br>");
+                }
+                
                 print_r("Stage date:" .$dec['stage_date']."</br>");
                 print_r("Visibility:" .$dec['visibility']."</br>");
                 print_r("Updated on:" .$dec['updated_on']."</br>");
