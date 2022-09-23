@@ -3,7 +3,7 @@ include ("../env.php");
  
         $curl = curl_init();
         $token = $_ENV['API_KEY'];
-        $url = "https://api.recruitcrm.io/v1/deals";
+        $url = "https://api.recruitcrm.io/v1/companies";
         curl_setopt ($curl, CURLOPT_URL, $url);
         curl_setopt($curl, 
             CURLOPT_HTTPHEADER,["authorization: Bearer $token",
@@ -12,26 +12,15 @@ include ("../env.php");
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
         $result = curl_exec ($curl);
-       // print_r($result);
+        //  print_r($result);
         curl_close($curl);
 
-        $decs =  json_decode($result);
-         echo "<pre>";
+        $decs =  json_decode($result,true);
+        echo "<pre>";
          print_r($decs);
         // if($e = curl_error($curl)){
         //     echo $e;
         // }
-        // $http_status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-
-        // if($http_status >= 400){
-        //     echo "<pre>";
-        //     print_r($decs);
-        // } 
-        // else{
-        //     // echo "<pre>";
-        //     print_r($decs);
-        // }
-
         // else{
           
         //     print_r("All candidates"."</br>");

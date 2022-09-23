@@ -1,0 +1,39 @@
+
+                    //             $key = array_search($delete_value, $mainArray, true);
+                    //             if ($key !== false) {
+                    //                 array_splice($mainArray, $key, 1);
+                    //             }
+                    //             $array = json_encode($mainArray);
+                    //             print_r($array); exit;
+                    //             $list = implode(',', $mainArray);
+
+                    //             // $company_slug ="16639168783260027207Hpi";
+                    //             $json_body ='{
+                    //                 "contact_slugs":"'.$list.'"
+                    //             }';
+                    //             // print_r($json_body); exit;
+                    //             // print_r($json_body); exit;                         
+                    //             $deal_slug = $json_obj->data[0]->slug;
+                    //                 $curl = curl_init();
+                    //                 $url = "https://api.recruitcrm.io/v1/deals/${deal_slug}";
+                    //                 curl_setopt ($curl,CURLOPT_URL, $url);
+                    //                 curl_setopt ($curl,CURLOPT_POST, true);
+                    //                 curl_setopt($curl,CURLOPT_HTTPHEADER,["authorization: Bearer $token",
+                    //                     "content-type: application/json"]);
+                    //                 curl_setopt ($curl,CURLOPT_POSTFIELDS, $json_body);
+                    //                 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+
+                    //                 $result = curl_exec ($curl);
+                    //                 $error = curl_error ($curl);
+                    //                 $http_status = curl_getinfo ($curl, CURLINFO_HTTP_CODE);
+                    //                 curl_close ($curl);
+                    //                 $error = curl_error($curl);
+                    //                         if($http_status === 200){
+                    //                             echo $result;
+                    //                         }
+                    //                         else{
+                    //                             // print_r("Remark:"."\r\n"."Job Unassigned Successfully!");
+                    //                             print_r($http_status.$result); 
+                    //                         }
+                    //                 curl_close($curl); 
+                    //                 exit;  

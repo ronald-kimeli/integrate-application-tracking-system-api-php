@@ -6,7 +6,7 @@ $token = $_ENV['API_KEY'];
 $url = "https://api.recruitcrm.io/v1/subscriptions";
 $data = '{
           "event": "contact.created",
-          "target_url": "https://webhook.site/6478dd25-dff2-4fe3-846e-009ed01ca4d3"
+          "target_url": "https://webhook.site/e7ed6b43-fd25-4d44-9a1d-53259dbd7355"
         }';
 curl_setopt ($curl,CURLOPT_URL, $url);
 curl_setopt ($curl,CURLOPT_POST, true);
